@@ -1,0 +1,53 @@
+get email
+get uname
+get otp
+get otp_type
+get ip_addr
+get ip_type
+
+acc_id = db.emails[email] or db.unames[uname]
+if ip_type == Enum.IPType.ipv4 or otp_type == Enum.OTPType.SMS:
+    
+    
+if ip_addr
+if not EMAIL and not UNAME:
+    write "You need an email or username to login.";
+    return False;
+if EMAIL:
+    if not EMAIL in db.emails:
+        AGE <- read AGE;
+        if AGE < 13:
+            write "Sorry, but access is not allowed for under 13s.";
+            return False;
+        FIRST_AUTH_URL <- GenerateAuthURL(EMAIL);
+        write_email EMAIL, GEN_OTP;
+        OTP <- read OTP;
+        if OTP == GEN_OTP:
+            write "Adding hardware auth is highly recommended.";
+            
+            return True;
+        write "Incorrect OTP was entered. Try again.";
+        return False;
+    ACC_ID <- db.accounts[db.emails[EMAIL]];
+    if PEPPER_OTP and UNAME:
+        if 
+        for pepper in db.peppers[ACC_ID]:
+            if PEPPER_OTP = GenPepperOTP(pepper):
+                
+        
+        
+    if db.has_hw[ACC_ID]:
+        if not IP_ADDR in db.ips[ACC_ID]:
+            if db.ip_cooldown[ACC_ID] < time.now:
+                write "New IP. Please use hardware auth.";
+            else:
+                write "You are adding IPs too frequently. Try again later.";
+            return False;
+    GEN_OTP <- GenerateOTP(ACC_ID, db.seeds[ACC_ID]);
+    write_email EMAIL GEN_OTP;
+    OTP <- read OTP;
+elif UNAME:
+    if not UNAME in db.unames:
+        write "Please add email or OTP";
+        CREATE_METHOD <- read CREATE_METHOD;
+        
