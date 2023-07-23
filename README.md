@@ -1,2 +1,2 @@
 # passwordless-login
-Login without any passwords. Only use email or OTP
+Idea: Login without any passwords. Only use email or OTP
